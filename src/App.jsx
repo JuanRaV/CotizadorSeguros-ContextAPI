@@ -1,10 +1,10 @@
-
+import AppSeguro from "./components/AppSeguro"
 
 function App() {
 
   return (
     <>
-      <h1 className="">Hola mundo</h1>
+      <AppSeguro/>
     </>
   )
 }
