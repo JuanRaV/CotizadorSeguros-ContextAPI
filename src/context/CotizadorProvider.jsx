@@ -12,6 +12,7 @@ const CotizadorProvider=({children})=>{
     })
 
     const [error,setError] = useState('')
+    const [resultado,setResultado] = useState(0)
 
     const handleChangeDatos = e =>{
         setDatos({
@@ -40,7 +41,7 @@ const CotizadorProvider=({children})=>{
         //Formatear
         resultado=resultado.toFixed(2)
         resultado =formatearDinero(resultado)
-        console.log(resultado)
+        setResultado(resultado)
 
     }
     
